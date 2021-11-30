@@ -1,0 +1,40 @@
+[
+    {
+        "id": 1,
+        "project_name": "Neon Cyclez",
+        "image": "https://i.ibb.co/9NdV0s8/neon.png",
+        "image1": "https://i.ibb.co/M66FR4m/neon1.png",
+        "image2": "https://i.ibb.co/B2yV1yg/neon2.png",
+        "image3": "https://i.ibb.co/VTxjQc5/neon3.png",
+        "category": "Mern Stack",
+        "description": "This is a Signle Product e-commerce website. MongoDB CRUD oparation supported. Admin can Post, Update, Delete products from Dashboard. This website have admin and user different panel on Dashboard. If Admin wants to login then need a Admin login info.(email:admin@admin.com - pass: 123456). Admin can add his Product without coding, also delete any product.Admin can see users Product list. How many order placed on his website. If any one place order then Order will not placed. Default status showing Pending. Admin can approve/shipped/cancel order. Admin can make Admin to any User. Only user can not delete any product or manage anything. User Can Place order and cancel their order.User can give feedback by Add Review from Dashboard and the review will be show on home page.",
+        "live_link": "https://bicycle-shop-2f05f.web.app/",
+        "client_link": "https://github.com/Alamin934/cycle-store-client-side",
+        "server_link": "https://github.com/Alamin934/cycle-store-server-side"
+    },
+    {
+        "id": 2,
+        "project_name": "Peck & Go",
+        "image": "https://i.ibb.co/zFxbtMM/peak-go.png",
+        "image1": "https://i.ibb.co/7gH557j/peak-go1.png",
+        "image2": "https://i.ibb.co/SRJqJwK/peak-go2.png",
+        "image3": "https://i.ibb.co/0tP2SGH/peak-go3.png",
+        "category": "Mern Stack",
+        "description": "This is a Travel Booking Agency website. Users can Booking any place for Travel and cancel their Booking. Firebase has been used for authentication. This website takes tourist information and give them touriest places in different countries. User needs to create account for Booking any place. Websites Admin can add their Booking services from this website admin panel. Admin can manage all user Booking list.",
+        "live_link": "https://travel-booking-agency.web.app/",
+        "client_link": "https://github.com/Alamin934/travel-booking-agency-client",
+        "server_link": "https://github.com/Alamin934/travel-booking-agency-server"
+    },
+    {
+        "id": 3,
+        "project_name": "Pharma Store",
+        "image": "https://i.ibb.co/3kYB76v/pharma.png",
+        "image1": "https://i.ibb.co/n6gZx6f/pharma1.png",
+        "image2": "https://i.ibb.co/ZN3Gr4p/pharma2.png",
+        "image3": "https://i.ibb.co/Lz7Khr6/pharma3.png",
+        "category": "Mern Stack",
+        "description": "This is a Online Medical Store. Any one can buy medicine or other products. For Buying any product from this website you will need to Create Account First. Without any account you will not see the products details. This websites has Manual Registration and Login system. You can also Create account or Login using Google and Facebook Account",
+        "live_link": "https://pharmacy-health-care.web.app/",
+        "code_link": "https://github.com/Alamin934/pharmacy-healthcare-store"
+    }
+]

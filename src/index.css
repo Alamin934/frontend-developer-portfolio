@@ -7,6 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #ECF0F3!important;
+  overflow-x: hidden!important;
 }
 
 code {
@@ -21,4 +22,20 @@ code {
 .custom-shadow{
   box-shadow: -5px -5px 15px #ffffff,5px 5px 15px #D1D9E6;
   transition: 1s all ease-in-out;
+}
+.btn-outline-secondary:hover{
+  color:#6c757d!important;
+}
+.btn-outline-primary:hover{
+      color: #0d6efd!important;
+}
+.btn-outline-danger:hover{
+      color: #dc3545!important;
+}
+.btn-outline-success:hover{
+      color: #198754!important;
+}
+.btn:hover{
+      background: linear-gradient(330deg, #e2e8ec,#ffffff);
+      box-shadow: -5px -5px 15px #D1D9E6,5px 5px 15px #ffffff;
 }

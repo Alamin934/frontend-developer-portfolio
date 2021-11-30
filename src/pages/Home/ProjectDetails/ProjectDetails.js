@@ -1,42 +1,61 @@
 import React, { useEffect, useState } from 'react';
+import { Col, Container, Row, Card, Nav } from 'react-bootstrap';
 import { useParams } from 'react-router';
+import Footer from '../../Shared/Footer/Footer';
 import Header from '../../Shared/Header/Header';
-const projects = [
-    {
-        "id": 1,
-        "project_name": "Neon Cyclez",
-        "image": "https://image.shutterstock.com/image-photo/word-demo-appearing-behind-torn-260nw-1782295403.jpg",
-        "category": "Mern Stack",
-        "description": "This is a Signle Product e-commerce website. MongoDB CRUD oparation supported. Admin can Post, Update, Delete products from Dashboard"
-    },
-    {
-        "id": 2,
-        "project_name": "Peck & Go",
-        "image": "https://image.shutterstock.com/image-photo/word-demo-appearing-behind-torn-260nw-1782295403.jpg",
-        "category": "Mern Stack",
-        "description": "This is a Travel Booking Agency website. Users can Booking any place for Travel and cancel their Booking. Firebase has been used for authentication"
-    },
-    {
-        "id": 3,
-        "project_name": "Pharma Store",
-        "image": "https://image.shutterstock.com/image-photo/word-demo-appearing-behind-torn-260nw-1782295403.jpg",
-        "category": "Mern Stack",
-        "description": "This is a Online Medical Store. Any one can buy medicine or other products. User can not see product details without login or registration"
-    },
-]
 const ProjectDetails = () => {
-    const [projectDetail, setProjectDetail] = useState([]);
     const { projectId } = useParams();
+    const [projects, setProjects] = useState([]);
+    const [projectDetail, setProjectDetail] = useState({});
+    useEffect(() => {
+        fetch('/portfolio.json')
+            .then(res => res.json())
+            .then(data => setProjects(data))
+    }, []);
+
     useEffect(() => {
         const project = projects?.find(pj => pj.id === parseInt(projectId));
         setProjectDetail(project);
-    }, [projectId]);
-    const { id, project_name, image, } = projectDetail;
+    }, [projects, projectId]);
+
+
     return (
         <div>
             <Header />
-            <h2>project id: {id}</h2>
-            <h2>project id: {project_name}</h2>
+            <Container className="py-5">
+                <Row className="d-flex justify-content-center">
+                    <Col xs={12} md={10}>
+                        <Card className="p-2 p-md-5">
+                            <Card.Img variant="top" src={projectDetail?.image} />
+                            <Card.Body>
+                                <Card.Title className="fs-3 fw-bold">{projectDetail?.project_name}</Card.Title>
+                                <div className="d-block d-md-flex mb-3">
+                                    <Nav.Link href={projectDetail?.live_link} target="_blank" className="custom-bg custom-shadow px-3 rounded-pill me-3 mt-3 btn btn-outline-primary text-primary">
+                                        Live Link <span><i className="bi bi-box-arrow-up-right"></i></span>
+                                    </Nav.Link>
+                                    <Nav.Link href={projectDetail?.code_link} target="_blank" className="custom-bg custom-shadow px-3 rounded-pill me-3 mt-3 btn btn-outline-success text-success">
+                                        {projectDetail?.client_link ? 'Client Side Code' : 'Code Link'} <span><i className="bi bi-box-arrow-up-right"></i></span>
+                                    </Nav.Link>
+                                    {projectDetail?.server_link && <Nav.Link href={projectDetail?.server_link} target="_blank" className="custom-bg custom-shadow px-3 rounded-pill mt-3 btn btn-outline-danger text-danger">
+                                        Server Side Code <span><i className="bi bi-box-arrow-up-right"></i></span>
+                                    </Nav.Link>}
+                                </div>
+                                <Card.Text>Details:<br /><br />{projectDetail?.description}</Card.Text>
+                            </Card.Body>
+                            <Row xs={1} md={2} className="g-4">
+                                <Col>
+                                    <Card.Img variant="top" src={projectDetail?.image1} />
+                                </Col>
+                                <Col>
+                                    <Card.Img variant="top" src={projectDetail?.image2} />
+                                </Col>
+                            </Row>
+                            <Card.Img className="mt-4" variant="top" src={projectDetail?.image3} />
+                        </Card>
+                    </Col>
+                </Row>
+            </Container>
+            <Footer />
         </div>
     );
 };

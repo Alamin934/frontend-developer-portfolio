@@ -5,32 +5,33 @@ import './Banner.css';
 const Banner = () => {
     return (
         <>
-            <div className="py-5">
+            <div className="py-5" id="banner">
                 <Container className="py-5">
-                    <Row className="g-5">
-                        <Col md="6" className="d-flex justify-content-center">
+                    <Row className="g-5" xs={1} md={2}>
+                        <Col className="d-flex justify-content-center">
                             <div className="banner-photo">
                                 <div className="bp-inner"></div>
                             </div>
                         </Col>
-                        <Col md="6" className="d-flex align-items-center">
+                        <Col className="d-flex align-items-center">
                             <div>
-                                <div className="w-75">
+                                <h2 className="banner-title fw-bolder mb-0">Hello, I am Al-Amin</h2>
+                                <div className="carousel-width d-flex align-items-center mb-2">
+                                    <h1 className="me-3 mb-2 fw-bold">a</h1>
                                     <Carousel interval={1800} controls={false} indicators={false}>
                                         <Carousel.Item>
-                                            <h5 className="fw-normal">Frontend Developer</h5>
+                                            <h3 className="text-primary fw-bold mb-0">Frontend Developer</h3>
                                         </Carousel.Item>
                                         <Carousel.Item>
-                                            <h5 className="fw-normal">Mern Stack Developer</h5>
+                                            <h3 className="text-primary fw-bold mb-0">Mern Stack Developer</h3>
                                         </Carousel.Item>
                                         <Carousel.Item>
-                                            <h5 className="fw-normal">WordPress Designer</h5>
+                                            <h3 className="text-primary fw-bold mb-0">WordPress Designer</h3>
                                         </Carousel.Item>
                                     </Carousel>
                                 </div>
-                                <h2 className="display-4 fw-bolder mb-3">Alamin</h2>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident velit quisquam accusamus consequuntur, illo corporis voluptas quo perspiciatis rerum quod doloribus minima. Quaerat, et eligendi!</p>
-                                <div className="mt-4 pt-2 d-block d-md-flex">
+                                <p>I design and develop websites for customers and companies of all types website, modern websites, online store using HTMl, CSS, JavaScript, React JS, Node JS, Express JS, MongoDB.</p>
+                                <div className="mt-4 pt-3 d-block d-md-flex">
 
                                     <Nav.Link href="https://drive.google.com/uc?id=1uT3gmYKwjZ2i5RFyhY--KxUahE6ft9GG&export=download" target="_blank" className="p-0 m-0 me-3 mb-2" style={{ color: '#0d6efd' }} download="AlAmin_WebDev_Resume">
                                         <Button variant="outline-primary" className="rounded-pill px-4 custom-bg custom-shadow border-2">

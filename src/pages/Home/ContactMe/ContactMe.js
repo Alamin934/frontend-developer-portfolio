@@ -20,9 +20,12 @@ const ContactMe = () => {
     return (
         <div className="py-5" id="contact_me">
             <Container>
-                <Row className="g-5">
+                <div>
+                    <p className="text-primary mb-2">Contact Me</p>
+                    <h2 className="fw-bold mb-4">How Can I Help You?</h2>
+                </div>
+                <Row className="g-5 ms-0">
                     <Col md="8" className="custom-bg p-3 custom-shadow rounded">
-                        <h4 className="fw-bold mb-4">How Can I Help You?</h4>
                         <div>
                             <Form onSubmit={sendEmail}>
                                 <Row>
@@ -36,7 +39,7 @@ const ContactMe = () => {
                                             className="shadow-sm"
                                             placeholder="Message"
                                             as="textarea"
-                                            style={{ height: '180px' }}
+                                            style={{ height: '174px' }}
                                             name="message" />
                                     </Col>
                                 </Row>

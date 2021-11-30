@@ -1,11 +1,12 @@
 .banner-photo {
     display: block;
     position: relative;
-    width: 300px;
-    height: 350px;
+    width: 330px;
+    height: 380px;
     border-radius: 3px;
     overflow: hidden;
-    background: linear-gradient(330deg, #e2e8ec,#ffffff);
+    border: 18px solid;
+    border-image: linear-gradient(330deg, #e2e8ec,#ffffff)1!important;
     box-shadow: 5px 5px 15px #ffffff,-5px -5px 15px #D1D9E6;
 }
 .banner-photo .bp-inner{
@@ -13,28 +14,22 @@
     /* background-image: url(https://i.ibb.co/yXTcL5C/alamin.png); */
     background-repeat: no-repeat;
     background-size: cover;
-    margin:20px;
     height: auto;
     display: block;
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: -20px;
+    bottom: -25px;
     width: auto;
-    left: 0;
-    right: 0;
+    left: -90px;
+    right: -25px;
     border-radius: 3px;
 }
-.btn-outline-secondary:hover{
-    color:#6c757d!important;
+.banner-title{
+    font-size: 48px;
 }
-.btn-outline-primary:hover{
-        color: #0d6efd!important;
+.carousel-width{
+    width: 75%;
 }
-.btn:hover{
-        background: linear-gradient(330deg, #e2e8ec,#ffffff);
-        box-shadow: -5px -5px 15px #D1D9E6,5px 5px 15px #ffffff;
-}
-
 @media only screen and (max-width: 600px) {
     .banner-photo {
         width: 220px;
@@ -44,6 +39,12 @@
         bottom: 0;
     left: 0;
     right: 0;
+    }
+    .banner-title{
+        font-size: 32px;
+    }
+    .carousel-width{
+        width: 100%;
     }
   }
 
