@@ -1,7 +1,6 @@
-import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
-import MyProject from '../MyProject/MyProject';
-
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router';
+import Header from '../../Shared/Header/Header';
 const projects = [
     {
         "id": 1,
@@ -25,30 +24,21 @@ const projects = [
         "description": "This is a Online Medical Store. Any one can buy medicine or other products. User can not see product details without login or registration"
     },
 ]
-const MyProjects = () => {
+const ProjectDetails = () => {
+    const [projectDetail, setProjectDetail] = useState([]);
+    const { projectId } = useParams();
+    useEffect(() => {
+        const project = projects?.find(pj => pj.id === parseInt(projectId));
+        setProjectDetail(project);
+    }, [projectId]);
+    const { id, project_name, image, } = projectDetail;
     return (
-        <>
-            <div className="py-5">
-                <h5 className="text-center">VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</h5>
-                <h1 className="text-center fw-bold">All Projects</h1>
-                <Container>
-                    <Row xs={1} md={3} className="g-4 mt-4">
-                        {
-                            projects?.map(project => <Col>
-                                <MyProject
-                                    key={project.id}
-                                    project={project}
-                                ></MyProject>
-                            </Col>)
-                        }
-                    </Row>
-                </Container>
-            </div>
-            <Container>
-                <hr />
-            </Container>
-        </>
+        <div>
+            <Header />
+            <h2>project id: {id}</h2>
+            <h2>project id: {project_name}</h2>
+        </div>
     );
 };
 
-export default MyProjects;
+export default ProjectDetails;
