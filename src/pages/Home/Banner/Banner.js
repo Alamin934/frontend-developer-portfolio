@@ -8,12 +8,12 @@ const Banner = () => {
             <div className="py-5" id="banner">
                 <Container className="py-5">
                     <Row className="g-5" xs={1} md={2}>
-                        <Col className="d-flex justify-content-center">
+                        <Col className="d-flex justify-content-center" data-aos="zoom-out-right">
                             <div className="banner-photo">
                                 <div className="bp-inner"></div>
                             </div>
                         </Col>
-                        <Col className="d-flex align-items-center">
+                        <Col className="d-flex align-items-center" data-aos="zoom-out-left">
                             <div>
                                 <h2 className="banner-title fw-bolder mb-0">Hello, I am Al-Amin</h2>
                                 <div className="carousel-width d-flex align-items-center mb-2">

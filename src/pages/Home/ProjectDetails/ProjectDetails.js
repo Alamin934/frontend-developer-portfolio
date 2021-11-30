@@ -25,8 +25,8 @@ const ProjectDetails = () => {
             <Container className="py-5">
                 <Row className="d-flex justify-content-center">
                     <Col xs={12} md={10}>
-                        <Card className="p-2 p-md-5">
-                            <Card.Img variant="top" src={projectDetail?.image} />
+                        <Card className="p-2 p-md-5 bg-light shadow-lg border-0">
+                            <Card.Img variant="top" className="shadow rounded" src={projectDetail?.image} />
                             <Card.Body>
                                 <Card.Title className="fs-3 fw-bold">{projectDetail?.project_name}</Card.Title>
                                 <div className="d-block d-md-flex mb-3">
@@ -48,13 +48,13 @@ const ProjectDetails = () => {
                             </Card.Body>
                             <Row xs={1} md={2} className="g-4">
                                 <Col>
-                                    <Card.Img variant="top" src={projectDetail?.image1} />
+                                    <Card.Img className="shadow rounded" variant="top" src={projectDetail?.image1} />
                                 </Col>
                                 <Col>
-                                    <Card.Img variant="top" src={projectDetail?.image2} />
+                                    <Card.Img className="shadow rounded" variant="top" src={projectDetail?.image2} />
                                 </Col>
                             </Row>
-                            <Card.Img className="mt-4" variant="top" src={projectDetail?.image3} />
+                            <Card.Img className="mt-4 shadow rounded" variant="top" src={projectDetail?.image3} />
                         </Card>
                     </Col>
                 </Row>

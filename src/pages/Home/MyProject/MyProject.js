@@ -7,7 +7,7 @@ const MyProject = ({ project }) => {
     return (
         <div>
             <Link to={`myProject/${id}`} style={{ textDecoration: 'none' }}>
-                <Card className="p-4 custom-bg custom-shadow border-0 btn">
+                <Card className="p-4 custom-bg custom-shadow border-0 btn" data-aos="fade-down">
                     <Card.Img variant="top" src={image} />
                     <Card.Body className="px-0" style={{ textAlign: 'left' }}>
                         <Card.Title>{project_name}</Card.Title>

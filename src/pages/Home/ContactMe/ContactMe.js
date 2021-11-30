@@ -25,7 +25,7 @@ const ContactMe = () => {
                     <h2 className="fw-bold mb-4">How Can I Help You?</h2>
                 </div>
                 <Row className="g-5 ms-0">
-                    <Col md="8" className="custom-bg p-3 custom-shadow rounded">
+                    <Col md="8" className="custom-bg p-3 custom-shadow rounded" data-aos="fade-down">
                         <div>
                             <Form onSubmit={sendEmail}>
                                 <Row>
@@ -48,7 +48,7 @@ const ContactMe = () => {
                         </div>
                     </Col>
                     <Col md="4" className="text-center text-md-start">
-                        <div className="mb-4 custom-bg custom-shadow p-3 rounded">
+                        <div className="mb-4 custom-bg custom-shadow p-3 rounded" data-aos="fade-down">
                             <Row>
                                 <Col md={2}>
                                     <h1 className="mb-0"><i className="bi bi-phone text-primary"></i></h1>
@@ -59,7 +59,7 @@ const ContactMe = () => {
                                 </Col>
                             </Row>
                         </div>
-                        <div className="mb-4 custom-bg custom-shadow p-3 rounded">
+                        <div className="mb-4 custom-bg custom-shadow p-3 rounded" data-aos="fade-down">
                             <Row>
                                 <Col md={2}>
                                     <h1 className="mb-0"><i className="bi bi-geo-alt text-primary"></i></h1>
@@ -70,7 +70,7 @@ const ContactMe = () => {
                                 </Col>
                             </Row>
                         </div>
-                        <div className="mb-4 mb-md-0 custom-bg custom-shadow p-3 rounded">
+                        <div className="mb-4 mb-md-0 custom-bg custom-shadow p-3 rounded" data-aos="fade-down">
                             <Row>
                                 <Col md={2}>
                                     <h1 className="mb-0"><i className="bi bi-envelope text-primary"></i></h1>
