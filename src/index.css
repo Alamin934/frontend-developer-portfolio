@@ -6,9 +6,19 @@ body {
   font-family: 'Poppins',Helvetica,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #ECF0F3!important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.custom-bg{
+  background: linear-gradient(330deg, #ffffff,#e2e8ec);
+  transition: 1s all ease-in-out;
+}
+.custom-shadow{
+  box-shadow: -5px -5px 15px #ffffff,5px 5px 15px #D1D9E6;
+  transition: 1s all ease-in-out;
 }

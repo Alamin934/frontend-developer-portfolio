@@ -21,8 +21,31 @@ const ContactMe = () => {
         <div className="py-5" id="contact_me">
             <Container>
                 <Row className="g-5">
+                    <Col md="8" className="custom-bg p-3 custom-shadow rounded">
+                        <h4 className="fw-bold mb-4">How Can I Help You?</h4>
+                        <div>
+                            <Form onSubmit={sendEmail}>
+                                <Row>
+                                    <Col xs={12} md={6}>
+                                        <Form.Control className="py-2 shadow-sm" placeholder="Full Name" name="full_name" />
+                                        <Form.Control className="mt-4 py-2 shadow-sm" placeholder="Email Address" type="email" name="email" />
+                                        <Form.Control className="mt-4 mb-4 mb-md-0 py-2 shadow-sm" placeholder="Subject" name="subject" />
+                                    </Col>
+                                    <Col xs={12} md={6}>
+                                        <Form.Control
+                                            className="shadow-sm"
+                                            placeholder="Message"
+                                            as="textarea"
+                                            style={{ height: '180px' }}
+                                            name="message" />
+                                    </Col>
+                                </Row>
+                                <Button type="submit" variant="outline-primary" className="rounded-pill px-4 mt-4 custom-bg custom-shadow border-2">Send Message</Button>
+                            </Form>
+                        </div>
+                    </Col>
                     <Col md="4" className="text-center text-md-start">
-                        <div className="mb-3">
+                        <div className="mb-4 custom-bg custom-shadow p-3 rounded">
                             <Row>
                                 <Col md={2}>
                                     <h1 className="mb-0"><i className="bi bi-phone text-primary"></i></h1>
@@ -33,7 +56,7 @@ const ContactMe = () => {
                                 </Col>
                             </Row>
                         </div>
-                        <div className="mb-3">
+                        <div className="mb-4 custom-bg custom-shadow p-3 rounded">
                             <Row>
                                 <Col md={2}>
                                     <h1 className="mb-0"><i className="bi bi-geo-alt text-primary"></i></h1>
@@ -44,7 +67,7 @@ const ContactMe = () => {
                                 </Col>
                             </Row>
                         </div>
-                        <div className="mb-3">
+                        <div className="mb-4 mb-md-0 custom-bg custom-shadow p-3 rounded">
                             <Row>
                                 <Col md={2}>
                                     <h1 className="mb-0"><i className="bi bi-envelope text-primary"></i></h1>
@@ -54,29 +77,6 @@ const ContactMe = () => {
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, saepe!</p>
                                 </Col>
                             </Row>
-                        </div>
-                    </Col>
-                    <Col md="8">
-                        <h4 className="fw-bold mb-4">How Can I Help You?</h4>
-                        <div>
-                            <Form onSubmit={sendEmail}>
-                                <Row>
-                                    <Col xs={12} md={6}>
-                                        <Form.Control className="py-2 border-secondary" placeholder="Full Name" name="full_name" />
-                                        <Form.Control className="mt-4 py-2 border-secondary" placeholder="Email Address" type="email" name="email" />
-                                        <Form.Control className="mt-4 mb-4 mb-md-0 py-2 border-secondary" placeholder="Subject" name="subject" />
-                                    </Col>
-                                    <Col xs={12} md={6}>
-                                        <Form.Control
-                                            className="border-secondary"
-                                            placeholder="Message"
-                                            as="textarea"
-                                            style={{ height: '180px' }}
-                                            name="message" />
-                                    </Col>
-                                </Row>
-                                <Button type="submit" variant="outline-primary" className="rounded-pill px-4 mt-4 shadow border-2">Send Message</Button>
-                            </Form>
                         </div>
                     </Col>
                 </Row>
