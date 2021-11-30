@@ -14,6 +14,18 @@
     },
     {
         "id": 2,
+        "project_name": "Pharma Store",
+        "image": "https://i.ibb.co/3kYB76v/pharma.png",
+        "image1": "https://i.ibb.co/n6gZx6f/pharma1.png",
+        "image2": "https://i.ibb.co/ZN3Gr4p/pharma2.png",
+        "image3": "https://i.ibb.co/Lz7Khr6/pharma3.png",
+        "category": "Mern Stack",
+        "description": "This is a Online Medical Store. Any one can buy medicine or other products. For Buying any product from this website you will need to Create Account First. Without any account you will not see the products details. This websites has Manual Registration and Login system. You can also Create account or Login using Google and Facebook Account",
+        "live_link": "https://pharmacy-health-care.web.app/",
+        "code_link": "https://github.com/Alamin934/pharmacy-healthcare-store"
+    },
+    {
+        "id": 3,
         "project_name": "Peck & Go",
         "image": "https://i.ibb.co/zFxbtMM/peak-go.png",
         "image1": "https://i.ibb.co/7gH557j/peak-go1.png",
@@ -26,7 +38,7 @@
         "server_link": "https://github.com/Alamin934/travel-booking-agency-server"
     },
     {
-        "id": 3,
+        "id": 4,
         "project_name": "Pharma Store",
         "image": "https://i.ibb.co/3kYB76v/pharma.png",
         "image1": "https://i.ibb.co/n6gZx6f/pharma1.png",
@@ -36,5 +48,18 @@
         "description": "This is a Online Medical Store. Any one can buy medicine or other products. For Buying any product from this website you will need to Create Account First. Without any account you will not see the products details. This websites has Manual Registration and Login system. You can also Create account or Login using Google and Facebook Account",
         "live_link": "https://pharmacy-health-care.web.app/",
         "code_link": "https://github.com/Alamin934/pharmacy-healthcare-store"
+    },
+    {
+        "id": 5,
+        "project_name": "Peck & Go",
+        "image": "https://i.ibb.co/zFxbtMM/peak-go.png",
+        "image1": "https://i.ibb.co/7gH557j/peak-go1.png",
+        "image2": "https://i.ibb.co/SRJqJwK/peak-go2.png",
+        "image3": "https://i.ibb.co/0tP2SGH/peak-go3.png",
+        "category": "Mern Stack",
+        "description": "This is a Travel Booking Agency website. Users can Booking any place for Travel and cancel their Booking. Firebase has been used for authentication. This website takes tourist information and give them touriest places in different countries. User needs to create account for Booking any place. Websites Admin can add their Booking services from this website admin panel. Admin can manage all user Booking list.",
+        "live_link": "https://travel-booking-agency.web.app/",
+        "client_link": "https://github.com/Alamin934/travel-booking-agency-client",
+        "server_link": "https://github.com/Alamin934/travel-booking-agency-server"
     }
 ]
