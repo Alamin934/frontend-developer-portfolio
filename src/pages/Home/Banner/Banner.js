@@ -32,8 +32,7 @@ const Banner = () => {
                                 </div>
                                 <p>I design and develop websites for customers and companies of all types website, modern websites, online store using HTMl, CSS, JavaScript, React JS, Node JS, Express JS, MongoDB.</p>
                                 <div className="mt-4 pt-3 d-block d-md-flex">
-
-                                    <Nav.Link href="https://drive.google.com/uc?id=1uT3gmYKwjZ2i5RFyhY--KxUahE6ft9GG&export=download" target="_blank" className="p-0 m-0 me-3 mb-2" style={{ color: '#0d6efd' }} download="AlAmin_WebDev_Resume">
+                                    <Nav.Link href="https://drive.google.com/uc?id=1EtnSyH-i9580l6Vsmg4L_89id4LdUEYy&export=download" target="_blank" className="p-0 m-0 me-3 mb-2" style={{ color: '#0d6efd' }} download="AlAmin_WebDev_Resume">
                                         <Button variant="outline-primary" className="rounded-pill px-4 custom-bg custom-shadow border-2">
                                             Download Resume
                                         </Button>
