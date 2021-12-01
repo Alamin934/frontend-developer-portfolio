@@ -24,7 +24,7 @@ const ContactMe = () => {
                     <p className="text-primary mb-2">Contact Me</p>
                     <h2 className="fw-bold mb-4">How Can I Help You?</h2>
                 </div>
-                <Row className="g-5 ms-0">
+                <Row className="g-5 mx-1">
                     <Col md="8" className="custom-bg p-3 custom-shadow rounded" data-aos="fade-down">
                         <div>
                             <Form onSubmit={sendEmail}>
