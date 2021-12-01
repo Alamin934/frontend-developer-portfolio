@@ -42,3 +42,9 @@ code {
 .navbar .nav-link:active{
   font-weight: bold;
 }
+
+@media only screen and (max-width: 600px) {
+  .body{
+    overflow-x: hidden!important;
+  }
+}
